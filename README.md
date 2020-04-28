@@ -15,5 +15,5 @@ If you drop an item inside the "cage"/room of Scp-173 you will get another one. 
 **[EXILED](https://github.com/galaxy119/EXILED) must be installed for this to work.**
 
 Place the "SCP1162.dll" file in your Plugins folder.
-> Windows: %appdata%/Plugins
+> Windows: %appdata%/Plugins\n
 > Linux: ../.config/Plugins/
