@@ -50,7 +50,7 @@ namespace SCP1162_EXI_2._0
 				}
 			}
 		}
-    private IEnumerator<float> SpawnCorpse(Player player, int role)
+        private IEnumerator<float> SpawnCorpse(Player player, int role)
 		{
 			player.GameObject.GetComponent<RagdollManager>().SpawnRagdoll(player.Position + Vector3.up * 5f, Quaternion.identity, Vector3.zero, role, new PlayerStats.HitInfo(1000f, player.UserId, DamageTypes.Falldown, player.Id), false, "Corpse", "Corpse", 0);
 			yield return Timing.WaitForSeconds(0.15f);
