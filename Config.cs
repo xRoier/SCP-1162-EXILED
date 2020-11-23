@@ -16,7 +16,7 @@ namespace SCP1162_EXI_2._0
         [Description("Change the message that displays when you drop an item through SCP-1162.")]
         public string ItemDropMessage { get; set; } = "<i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>";
         public ushort ItemDropMessageDuration { get; set; } = 5;
-        [Description("The list of items. To add another item, use: ItemName: (LastItemNumber + 1). Ex = GunMP7: 30")]
+        [Description("The list of possible items.")]
         public List<string> Chances { get; set; } = new List<string>
         {
             "KeycardO5",
