@@ -11,46 +11,46 @@ scp1162:
   # Use Hints instead of Broadcast?
   use_hints: true
   # Change the message that displays when you drop an item through SCP-1162.
-  itemdropmessage: <i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>
-  itemdropmessageduration: 5
-  # The list of items. To add another item, use: ItemName: (LastItemNumber + 1). Ex = GunMP7: 30
+  item_drop_message: <i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>
+  item_drop_message_duration: 5
+  # The list of possible items.
   chances:
-    KeycardO5: 1
-    SCP500: 2
-    MicroHID: 3
-    KeycardNTFCommander: 4
-    KeycardContainmentEngineer: 5
-    SCP268: 6
-    GunCOM15: 7
-    GrenadeFrag: 8
-    SCP207: 9
-    Adrenaline: 10
-    GunUSP: 11
-    KeycardFacilityManager: 12
-    Medkit: 13
-    KeycardNTFLieutenant: 14
-    KeycardSeniorGuard: 15
-    Disarmer: 16
-    KeycardZoneManager: 17
-    KeycardScientistMajor: 18
-    KeycardGuard: 19
-    Radio: 20
-    Ammo556: 21
-    Ammo762: 22
-    Ammo9mm: 23
-    GrenadeFlash: 24
-    WeaponManagerTablet: 25
-    KeycardScientist: 26
-    KeycardJanitor: 27
-    Coin: 28
-    Flashlight: 29
+  - KeycardO5
+  - SCP500
+  - MicroHID
+  - KeycardNTFCommander
+  - KeycardContainmentEngineer
+  - SCP268
+  - GunCOM15
+  - GrenadeFrag
+  - SCP207
+  - Adrenaline
+  - GunUSP
+  - KeycardFacilityManager
+  - Medkit
+  - KeycardNTFLieutenant
+  - KeycardSeniorGuard
+  - Disarmer
+  - KeycardZoneManager
+  - KeycardScientistMajor
+  - KeycardGuard
+  - Radio
+  - Ammo556
+  - Ammo762
+  - Ammo9mm
+  - GrenadeFlash
+  - WeaponManagerTablet
+  - KeycardScientist
+  - KeycardJanitor
+  - Coin
+  - Flashlight
 ```
 
 
 # Installation
 
-**[EXILED 2.0](https://github.com/galaxy119/EXILED) must be installed for this to work.**
+**[EXILED 2.1.18](https://github.com/galaxy119/EXILED) must be installed for this to work.**
 
-Place the "SCP1162-v2.0.0.dll" file in your Plugins folder.
+Place the "SCP1162-v2.1.0.dll" file in your Plugins folder.
 Windows: %appdata%/Plugins
 Linux: ../.config/Plugins/
