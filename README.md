@@ -10,6 +10,8 @@ scp1162:
   is_enabled: true
   # Use Hints instead of Broadcast?
   use_hints: true
+  # Can SCP-1162 spawn corpses?
+  can_spawn_corpses: true
   # Change the message that displays when you drop an item through SCP-1162.
   item_drop_message: <i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>
   item_drop_message_duration: 5
