@@ -13,10 +13,12 @@ namespace SCP1162_EXI_2._0
         public bool IsEnabled { get; set; } = true;
         [Description("Use Hints instead of Broadcast?")]
         public bool UseHints { get; set; } = true;
+        [Description("Can SCP-1162 spawn corpses?")]
+        public bool CanSpawnCorpses { get; set; } = true;
         [Description("Change the message that displays when you drop an item through SCP-1162.")]
         public string ItemDropMessage { get; set; } = "<i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>";
         public ushort ItemDropMessageDuration { get; set; } = 5;
-        [Description("The list of possible items.")]
+        [Description("The list of items.")]
         public List<string> Chances { get; set; } = new List<string>
         {
             "KeycardO5",
