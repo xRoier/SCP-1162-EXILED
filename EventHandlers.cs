@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SCP1162_EXI_2._0
 {
-    public class EventHandlers
+	public class EventHandlers
     {
         private Plugin plugin;
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
@@ -42,11 +42,9 @@ namespace SCP1162_EXI_2._0
                             roleid = 11;
                             break;
                     }
-                    SpawnCorpse(ev.Player, roleid);
+                    Map.SpawnRagdoll((RoleType)roleid, DamageTypes.Falldown, "Corpse", ev.Player.Position + Vector3.up * 5f);
                 }
             }
         }
-        private void SpawnCorpse(Player player, int role)
-            => player.GameObject.GetComponent<RagdollManager>().SpawnRagdoll(player.Position + Vector3.up * 5f, Quaternion.identity, Vector3.zero, role, new PlayerStats.HitInfo(1000f, player.UserId, DamageTypes.Falldown, player.Id), false, "Corpse", "Corpse", 0);
     }
 }
