@@ -1,8 +1,6 @@
-using System;
+using Exiled.API.Interfaces;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Exiled.API.Features;
-using Exiled.API.Interfaces;
 
 namespace SCP1162_EXI_2._0
 {
