@@ -8,7 +8,6 @@ namespace SCP1162_EXI_2._0
 {
     public class Config : IConfig
     {
-        internal List<ItemType> ChancesItem = new List<ItemType>();
         [Description("Is the plugin enabled?")]
         public bool IsEnabled { get; set; } = true;
         [Description("Use Hints instead of Broadcast?")]
@@ -19,55 +18,37 @@ namespace SCP1162_EXI_2._0
         public string ItemDropMessage { get; set; } = "<i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>";
         public ushort ItemDropMessageDuration { get; set; } = 5;
         [Description("The list of items.")]
-        public List<string> Chances { get; set; } = new List<string>
+        public List<ItemType> Chances { get; set; } = new List<ItemType>
         {
-            "KeycardO5",
-            "SCP500",
-            "MicroHID",
-            "KeycardNTFCommander",
-            "KeycardContainmentEngineer",
-            "SCP268",
-            "GunCOM15",
-            "GrenadeFrag",
-            "SCP207",
-            "Adrenaline",
-            "GunUSP",
-            "KeycardFacilityManager",
-            "Medkit",
-            "KeycardNTFLieutenant",
-            "KeycardSeniorGuard",
-            "Disarmer",
-            "KeycardZoneManager",
-            "KeycardScientistMajor",
-            "KeycardGuard",
-            "Radio",
-            "Ammo556",
-            "Ammo762",
-            "Ammo9mm",
-            "GrenadeFlash",
-            "WeaponManagerTablet",
-            "KeycardScientist",
-            "KeycardJanitor",
-            "Coin",
-            "Flashlight"
+            ItemType.KeycardO5,
+            ItemType.SCP500,
+            ItemType.MicroHID,
+            ItemType.KeycardNTFCommander,
+            ItemType.KeycardContainmentEngineer,
+            ItemType.SCP268,
+            ItemType.GunCOM15,
+            ItemType.GrenadeFrag,
+            ItemType.SCP207,
+            ItemType.Adrenaline,
+            ItemType.GunUSP,
+            ItemType.KeycardFacilityManager,
+            ItemType.Medkit,
+            ItemType.KeycardNTFLieutenant,
+            ItemType.KeycardSeniorGuard,
+            ItemType.Disarmer,
+            ItemType.KeycardZoneManager,
+            ItemType.KeycardScientistMajor,
+            ItemType.KeycardGuard,
+            ItemType.Radio,
+            ItemType.Ammo556,
+            ItemType.Ammo762,
+            ItemType.Ammo9mm,
+            ItemType.GrenadeFlash,
+            ItemType.WeaponManagerTablet,
+            ItemType.KeycardScientist,
+            ItemType.KeycardJanitor,
+            ItemType.Coin,
+            ItemType.Flashlight
         };
-        internal void ParseChances()
-        {
-            ChancesItem.Clear();
-            foreach (string chance in Chances)
-            {
-                ItemType item;
-                try
-                {
-                    item = (ItemType)Enum.Parse(typeof(ItemType), chance, true);
-                }
-                catch (Exception)
-                {
-                    Log.Error($"Unable to parse item chance: {chance}.");
-                    continue;
-                }
-                ChancesItem.Add(item);
-            }
-        }
     }
 }
