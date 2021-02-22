@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SCP1162_EXI_2._0
 {
-	public class EventHandlers
+    public class EventHandlers
     {
         private Plugin plugin;
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
@@ -16,8 +16,10 @@ namespace SCP1162_EXI_2._0
                 if (plugin.Config.UseHints)
                     ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);
                 else
+                {
                     ev.Player.ClearBroadcasts();
                     ev.Player.Broadcast(plugin.Config.ItemDropMessageDuration, plugin.Config.ItemDropMessage);
+                }
                 if (!plugin.Config.CanSpawnCorpses)
                 {
                     ev.Pickup.itemId = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
