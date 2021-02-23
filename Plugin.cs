@@ -14,15 +14,15 @@ namespace SCP1162_EXI_2._0
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 19);
         public override void OnEnabled()
         {
-            base.OnEnabled();
             EventHandlers = new EventHandlers(this);
             EvPlayer.ItemDropped += EventHandlers.OnItemDropped;
+            base.OnEnabled();
         }
         public override void OnDisabled()
         {
-            base.OnDisabled();
             EvPlayer.ItemDropped -= EventHandlers.OnItemDropped;
             EventHandlers = null;
+            base.OnDisabled();
         }
     }
 }
