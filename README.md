@@ -1,3 +1,4 @@
+[![Github All Releases](https://img.shields.io/github/downloads/xRoier/SCP-1162-EXILED/total?color=blueviolet&style=for-the-badge)]()
 # SCP-1162-EXILED
 
 Turn 173 spawn into SCP-1162.
