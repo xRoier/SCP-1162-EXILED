@@ -11,7 +11,7 @@ namespace SCP1162_EXI_2._0
 
         internal void OnItemDropped(ItemDroppedEventArgs ev)
         {
-            if (Vector3.Distance(ev.Player.Position, Map.GetRandomSpawnPoint(RoleType.Scp173)) <= 8.2f)
+            if (Vector3.Distance(ev.Player.Position, RoleType.Scp173.GetRandomSpawnPoint()) <= 8.2f)
             {
                 if (plugin.Config.UseHints)
                     ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);
