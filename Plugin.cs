@@ -10,7 +10,7 @@ namespace SCP1162_EXI_2._0
         public override string Name => "SCP1162";
         public override string Author => "xRoier";
         public EventHandlers EventHandlers;
-        public override Version Version { get; } = new Version(2, 1, 2);
+        public override Version Version { get; } = new Version(2, 1, 3);
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 19);
         public override void OnEnabled()
         {
