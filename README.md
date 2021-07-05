@@ -55,5 +55,5 @@ scp1162:
 **[EXILED 2.1.29](https://github.com/galaxy119/EXILED) must be installed for this to work.**
 
 Place the "SCP1162.dll" file in your Plugins folder.
-Windows: %appdata%/Plugins
-Linux: ../.config/Plugins/
+Windows: ``%appdata%/Plugins``.
+Linux: ``.config/Plugins/``.
