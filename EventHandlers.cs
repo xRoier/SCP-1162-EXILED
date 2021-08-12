@@ -1,4 +1,3 @@
-using Exiled.API.Features;
 using Exiled.Events.EventArgs;
 using UnityEngine;
 
@@ -11,22 +10,18 @@ namespace SCP1162_EXI_2._0
 
         internal void OnItemDropped(ItemDroppedEventArgs ev)
         {
-            if (Vector3.Distance(ev.Player.Position, RoleType.Scp173.GetRandomSpawnPoint()) <= 8.2f)
-            { 
+            if (Vector3.Distance(ev.Player.Position, Exiled.API.Extensions.Role.GetRandomSpawnPoint(RoleType.Scp173)) <= 8.2f)
+            {
                 if (plugin.Config.UseHints)
                     ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);
                 else
-                {
-                    ev.Player.ClearBroadcasts();
-                    ev.Player.Broadcast(plugin.Config.ItemDropMessageDuration, plugin.Config.ItemDropMessage);
-                }
+                    ev.Player.Broadcast(plugin.Config.ItemDropMessageDuration, plugin.Config.ItemDropMessage, Broadcast.BroadcastFlags.Normal, true);
                 if (!plugin.Config.CanSpawnCorpses)
                 {
                     ev.Pickup.itemId = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
                     return;
                 }
-                int r = Random.Range(0, 14);
-                if (r <= 13)
+                if (Random.Range(0, 14) <= 13)
                     ev.Pickup.itemId = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
                 else
                 {
@@ -44,7 +39,7 @@ namespace SCP1162_EXI_2._0
                             roleid = 11;
                             break;
                     }
-                    Map.SpawnRagdoll((RoleType)roleid, DamageTypes.Falldown, "Corpse", ev.Player.Position + Vector3.up * 5f);
+                    Exiled.API.Features.Ragdoll.Spawn((RoleType)roleid, DamageTypes.Falldown, "Corpse", ev.Player.Position + Vector3.up * 5f);
                 }
             }
         }
