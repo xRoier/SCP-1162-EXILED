@@ -32,57 +32,51 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\Documents\a aReferencias2.0\0Harmony.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Desktop\AssemblyPublicizer\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\ExiledRefs\Assembly-CSharp.dll</HintPath>
+      <HintPath>D:\ExiledRefs30\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Desktop\AssemblyPublicizer\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\ExiledRefs\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>D:\ExiledRefs30\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.API.dll</HintPath>
+    <Reference Include="Exiled.API, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.API.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Bootstrap, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.Bootstrap.dll</HintPath>
+    <Reference Include="Exiled.Bootstrap, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Bootstrap.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.CreditTags, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.CreditTags.dll</HintPath>
+    <Reference Include="Exiled.CreditTags, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.CreditTags.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.CustomItems, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.CustomItems.dll</HintPath>
+    <Reference Include="Exiled.CustomItems, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.CustomItems.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Events, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.Events.dll</HintPath>
+    <Reference Include="Exiled.Events, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Events.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Loader, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.Loader.dll</HintPath>
+    <Reference Include="Exiled.Loader, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Loader.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Permissions, Version=2.14.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.Permissions.dll</HintPath>
+    <Reference Include="Exiled.Permissions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Permissions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.2.14.0\lib\net472\Exiled.Updater.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Updater.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="Mirror">
-      <HintPath>..\..\..\..\Desktop\EXILED\ref\Mirror.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -103,9 +97,6 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>D:\ExiledRefs\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="YamlDotNet">
-      <HintPath>..\..\..\..\Documents\a aReferencias2.0\YamlDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
