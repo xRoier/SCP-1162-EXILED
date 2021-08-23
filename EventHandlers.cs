@@ -1,16 +1,16 @@
 using Exiled.Events.EventArgs;
 using UnityEngine;
 
-namespace SCP1162
+namespace SCP1162_EXI_2._0
 {
     public class EventHandlers
     {
         private Plugin plugin;
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
 
-        public void OnItemDropped(DroppingItemEventArgs ev)
+        internal void OnItemDropped(ItemDroppedEventArgs ev)
         {
-            if (Vector3.Distance(ev.Player.Position, Exiled.API.Extensions.RoleExtensions.GetRandomSpawnProperties(RoleType.Scp173).Item1) <= 8.2f)
+            if (Vector3.Distance(ev.Player.Position, Exiled.API.Extensions.Role.GetRandomSpawnPoint(RoleType.Scp173)) <= 8.2f)
             {
                 if (plugin.Config.UseHints)
                     ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);
@@ -18,24 +18,14 @@ namespace SCP1162
                     ev.Player.Broadcast(plugin.Config.ItemDropMessageDuration, plugin.Config.ItemDropMessage, Broadcast.BroadcastFlags.Normal, true);
                 if (!plugin.Config.CanSpawnCorpses)
                 {
-                    ev.IsAllowed = false;
-                    ev.Player.RemoveItem(ev.Item.Base);
-                    var item = ev.Player.AddItem(plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)]);
-                    ev.Player.DropItem(item);
+                    ev.Pickup.itemId = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
                     return;
                 }
-
                 if (Random.Range(0, 14) <= 13)
-                {
-                    ev.IsAllowed = false;
-                    ev.Player.RemoveItem(ev.Item.Base);
-                    var item = ev.Player.AddItem(plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)]);
-                    ev.Player.DropItem(item);
-                }
+                    ev.Pickup.itemId = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
                 else
                 {
-                    ev.IsAllowed = false;
-                    ev.Player.RemoveItem(ev.Item.Base);
+                    ev.Pickup.itemId = ItemType.None;
                     int roleid = Random.Range(0, 12);
                     switch (roleid)
                     {
