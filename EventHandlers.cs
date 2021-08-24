@@ -12,6 +12,7 @@ namespace SCP1162
         {
             if (Vector3.Distance(ev.Player.Position, Exiled.API.Extensions.RoleExtensions.GetRandomSpawnProperties(RoleType.Scp173).Item1) <= 8.2f)
             {
+                if(ev.Item == null) return;
                 if (plugin.Config.UseHints)
                     ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);
                 else

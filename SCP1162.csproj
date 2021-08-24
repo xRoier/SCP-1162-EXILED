@@ -32,50 +32,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\AssemblyPublicizer\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\ExiledRefs30\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\AssemblyPublicizer\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\ExiledRefs30\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.API, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.API.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.API.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.Bootstrap, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Bootstrap.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.Bootstrap.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.CreditTags, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.CreditTags.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.CreditTags.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.CustomItems, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.CustomItems.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.CustomItems.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.Events, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Events.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.Events.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.Loader, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Loader.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.Loader.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.Permissions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Permissions.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.Permissions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\EXILED.3.0.0-alpha.54\lib\net472\Exiled.Updater.dll</HintPath>
+      <HintPath>packages\EXILED.3.0.0-alpha.60\lib\net472\Exiled.Updater.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -86,17 +78,11 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\Documents\a aReferencias2.0\UnityEngine.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\ExiledRefs\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\Documents\a aReferencias2.0\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\ExiledRefs\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +92,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
