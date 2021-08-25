@@ -10,6 +10,7 @@ namespace SCP1162
 
         public void OnItemDropped(DroppingItemEventArgs ev)
         {
+            if(ev.Item == null) return;
             if (Vector3.Distance(ev.Player.Position, Exiled.API.Extensions.RoleExtensions.GetRandomSpawnProperties(RoleType.Scp173).Item1) <= 8.2f)
             {
                 if (plugin.Config.UseHints)
