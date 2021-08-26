@@ -9,15 +9,16 @@ namespace SCP1162
         public override string Name => "SCP1162";
         public override string Author => "xRoier";
         public EventHandlers EventHandlers;
-        public override Version Version { get; } = new Version(2, 2, 0);
+        public override Version Version { get; } = new Version(2, 2, 1);
         public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
-        
+
         public override void OnEnabled()
         {
             EventHandlers = new EventHandlers(this);
             Exiled.Events.Handlers.Player.DroppingItem += EventHandlers.OnItemDropped;
             base.OnEnabled();
         }
+
         public override void OnDisabled()
         {
             Exiled.Events.Handlers.Player.DroppingItem -= EventHandlers.OnItemDropped;
