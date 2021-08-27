@@ -2,7 +2,7 @@
 # SCP-1162-EXILED
 
 Turn 173 spawn into SCP-1162.
-If you drop an item inside the "cage"/room of Scp-173 you will get another one. (Or a corpse).
+If you drop an item inside the "cage"/room of Scp-173 you will get another one.
 
 # Config
 ```
@@ -11,8 +11,6 @@ scp1162:
   is_enabled: true
   # Use Hints instead of Broadcast?
   use_hints: true
-  # Can SCP-1162 spawn corpses?
-  can_spawn_corpses: true
   # Change the message that displays when you drop an item through SCP-1162.
   item_drop_message: <i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>
   item_drop_message_duration: 5
@@ -52,7 +50,7 @@ scp1162:
 
 # Installation
 
-**[EXILED 2.1.29](https://github.com/galaxy119/EXILED) must be installed for this to work.**
+**[EXILED 3.0.0](https://github.com/galaxy119/EXILED) must be installed for this to work.**
 
 Place the "SCP1162.dll" file in your Plugins folder.
 Windows: ``%appdata%/EXILED/Plugins``.
