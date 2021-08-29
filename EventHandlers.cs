@@ -1,9 +1,7 @@
 using Exiled.API.Features.Items;
 using Exiled.Events.EventArgs;
-using GameCore;
 using SCP1162.API;
 using UnityEngine;
-using Log = Exiled.API.Features.Log;
 
 namespace SCP1162
 {
