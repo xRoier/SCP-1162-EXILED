@@ -4,6 +4,7 @@
 Turn 173 spawn into SCP-1162.
 If you drop an item inside the "cage"/room of Scp-173 you will get another one. (Or a corpse).
 
+[![Github All Releases](https://img.shields.io/github/downloads/xRoier/DiscordAutoBanMessage/total?color=blueviolet&style=for-the-badge)]()
 # Config
 ```
 scp1162:
