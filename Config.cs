@@ -1,21 +1,19 @@
-using Exiled.API.Interfaces;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Exiled.API.Interfaces;
 
-namespace SCP1162_EXI_2._0
+namespace SCP1162
 {
-	public class Config : IConfig
+    public class Config : IConfig
     {
         [Description("Is the plugin enabled?")]
         public bool IsEnabled { get; set; } = true;
         [Description("Use Hints instead of Broadcast?")]
         public bool UseHints { get; set; } = true;
-        [Description("Can SCP-1162 spawn corpses?")]
-        public bool CanSpawnCorpses { get; set; } = true;
         [Description("Change the message that displays when you drop an item through SCP-1162.")]
         public string ItemDropMessage { get; set; } = "<i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>";
         public ushort ItemDropMessageDuration { get; set; } = 5;
-        [Description("The list of items.")]
+        [Description("The list of item chances.")]
         public List<ItemType> Chances { get; set; } = new List<ItemType>
         {
             ItemType.KeycardO5,
@@ -25,24 +23,23 @@ namespace SCP1162_EXI_2._0
             ItemType.KeycardContainmentEngineer,
             ItemType.SCP268,
             ItemType.GunCOM15,
-            ItemType.GrenadeFrag,
             ItemType.SCP207,
             ItemType.Adrenaline,
-            ItemType.GunUSP,
+            ItemType.GunCOM18,
             ItemType.KeycardFacilityManager,
             ItemType.Medkit,
             ItemType.KeycardNTFLieutenant,
-            ItemType.KeycardSeniorGuard,
-            ItemType.Disarmer,
+            ItemType.KeycardGuard,
+            ItemType.GrenadeHE,
             ItemType.KeycardZoneManager,
-            ItemType.KeycardScientistMajor,
             ItemType.KeycardGuard,
             ItemType.Radio,
-            ItemType.Ammo556,
-            ItemType.Ammo762,
-            ItemType.Ammo9mm,
+            ItemType.Ammo9x19,
+            ItemType.Ammo12gauge,
+            ItemType.Ammo44cal,
+            ItemType.Ammo556x45,
+            ItemType.Ammo762x39,
             ItemType.GrenadeFlash,
-            ItemType.WeaponManagerTablet,
             ItemType.KeycardScientist,
             ItemType.KeycardJanitor,
             ItemType.Coin,
