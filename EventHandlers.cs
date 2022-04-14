@@ -27,7 +27,7 @@ namespace SCP1162
                     var newItemType = plugin.Config.Chances[Random.Range(0, plugin.Config.Chances.Count)];
                     var eventArgs = new UsingScp1162EventArgs(ev.Player, newItemType, oldItem);
                     Scp1162Event.OnUsingScp1162(eventArgs);
-                    var newItem = new Item(eventArgs.ItemAfter);
+                    var newItem = Item.Create(eventArgs.ItemAfter);
                     ev.Player.AddItem(newItem);
                     ev.Player.DropItem(newItem);
                 }
