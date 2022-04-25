@@ -50,7 +50,7 @@ scp1162:
 
 # Installation
 
-**[EXILED 3.0.0](https://github.com/galaxy119/EXILED) must be installed for this to work.**
+**[EXILED 5.0.0](https://github.com/galaxy119/EXILED) must be installed for this to work.**
 
 Place the "SCP1162.dll" file in your Plugins folder.
 Windows: ``%appdata%/EXILED/Plugins``.
