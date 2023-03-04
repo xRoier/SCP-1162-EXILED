@@ -8,6 +8,10 @@ namespace SCP1162
     {
         [Description("Is the plugin enabled?")]
         public bool IsEnabled { get; set; } = true;
+
+        [Description("Should debug messages be displayed?")]
+        public bool Debug { get; set; } = false;
+
         [Description("Use Hints instead of Broadcast?")]
         public bool UseHints { get; set; } = true;
         [Description("Change the message that displays when you drop an item through SCP-1162.")]

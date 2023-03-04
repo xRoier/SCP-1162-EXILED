@@ -1,5 +1,8 @@
+using Exiled.API.Extensions;
 using Exiled.API.Features.Items;
 using Exiled.Events.EventArgs;
+using Exiled.Events.EventArgs.Player;
+using PlayerRoles;
 using SCP1162.API;
 using UnityEngine;
 
@@ -15,7 +18,7 @@ namespace SCP1162
             try
             {
                 if(!ev.IsAllowed) return;
-                if (Vector3.Distance(ev.Player.Position, Exiled.API.Extensions.RoleExtensions.GetRandomSpawnProperties(RoleType.Scp173).Item1) <= 8.2f)
+                if (Vector3.Distance(ev.Player.Position, RoleTypeId.Scp173.GetRandomSpawnLocation().Position) <= 8.2f)
                 {
                     if (plugin.Config.UseHints)
                         ev.Player.ShowHint(plugin.Config.ItemDropMessage, plugin.Config.ItemDropMessageDuration);

@@ -1,9 +1,10 @@
 ﻿using System;
 using Exiled.API.Features;
+using Exiled.Events.EventArgs.Interfaces;
 
 namespace SCP1162.API
 {
-    public class UsingScp1162EventArgs : EventArgs
+    public class UsingScp1162EventArgs : IExiledEvent
     {
         public UsingScp1162EventArgs(Player player, ItemType itemafter, ItemType itembefore)
         {
