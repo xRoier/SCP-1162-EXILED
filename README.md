@@ -11,6 +11,8 @@ scp1162:
   is_enabled: true
   # Use Hints instead of Broadcast?
   use_hints: true
+  # Use Old SCP-173 Spawn in Light Containment?
+  use_old173_spawn: true
   # Change the message that displays when you drop an item through SCP-1162.
   item_drop_message: <i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>
   item_drop_message_duration: 5

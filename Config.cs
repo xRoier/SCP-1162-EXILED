@@ -14,6 +14,10 @@ namespace SCP1162
 
         [Description("Use Hints instead of Broadcast?")]
         public bool UseHints { get; set; } = true;
+
+        [Description("Use Old SCP-173 Spawn in Light Containment?")]
+        public bool UseOld173Spawn { get; set; } = true;
+
         [Description("Change the message that displays when you drop an item through SCP-1162.")]
         public string ItemDropMessage { get; set; } = "<i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>";
         public ushort ItemDropMessageDuration { get; set; } = 5;
