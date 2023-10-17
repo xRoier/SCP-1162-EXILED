@@ -1,24 +1,46 @@
 using System.Collections.Generic;
 using System.ComponentModel;
+using Exiled.API.Enums;
 using Exiled.API.Interfaces;
 
 namespace SCP1162
 {
     public class Config : IConfig
     {
-        [Description("Is the plugin enabled?")]
+        [Description("Plugin Settings")]
         public bool IsEnabled { get; set; } = true;
-
-        [Description("Should debug messages be displayed?")]
         public bool Debug { get; set; } = false;
 
-        [Description("Use Hints instead of Broadcast?")]
+        [Description("If Disabled, it will use private broadcasts instead of hints.")]
         public bool UseHints { get; set; } = true;
-        [Description("Change the message that displays when you drop an item through SCP-1162.")]
-        public string ItemDropMessage { get; set; } = "<i>You try to drop the item through <color=yellow>SCP-1162</color> to get another...</i>";
-        public ushort ItemDropMessageDuration { get; set; } = 5;
+
+        [Description("If Enabled, it will use SCP-173's New containment chamber located in HCZ, instead of LCZ's 173 Containment Chamber.")]
+        public bool UseNew173Spawn { get; set; }
+
+        [Description("Determines if SCP-1162 has a chance to punish players for extended use.")]
+        public bool SCP1162Hurts { get; set; }
+        public int HurtLimit { get; set; } = 5;
+        public int HurtChance { get; set; } = 50;
+        public ushort HurtAmount { get; set; } = 60;
+        public bool HurtEffects { get; set; } = false;
+        public Dictionary<EffectType, ushort> HurtEffectChances { get; set; } = new Dictionary<EffectType, ushort>
+        {
+            {EffectType.Blinded, 5},
+            {EffectType.Stained, 5},
+        };
+
+        [Description("Determines if the chances of getting hurt increase exponentially with each use of SCP-1162.")]
+        public bool ExponentialHurtChance { get; set; } = false;
+        public ushort ExponentialHurtChanceMin { get; set; } = 5;
+        public ushort ExponentialHurtChanceMax { get; set; } = 10;
+
+        [Description("SCP-1162 Messages.")]
+        public string HurtMessage { get; set; } = "<b><size=20><color=red>[SCP-1162]</color> You feel a sharp excruciating pain trying to use SCP-1162.</size></b>";
+        public string ItemDropMessage { get; set; } = "<b><size=20><color=green>[SCP-1162]</color> You try to drop the item to get another.</size></b>";
+        public ushort MessageDuration { get; set; } = 5;
+
         [Description("The list of item chances.")]
-        public List<ItemType> Chances { get; set; } = new List<ItemType>
+        public List<ItemType> ItemChancesList { get; set; } = new List<ItemType>
         {
             ItemType.KeycardO5,
             ItemType.SCP500,
@@ -33,6 +55,7 @@ namespace SCP1162
             ItemType.KeycardFacilityManager,
             ItemType.Medkit,
             ItemType.KeycardMTFOperative,
+            ItemType.KeycardMTFPrivate,
             ItemType.KeycardGuard,
             ItemType.GrenadeHE,
             ItemType.KeycardZoneManager,
